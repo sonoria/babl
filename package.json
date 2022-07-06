@@ -9,7 +9,7 @@
     "lint:fix": "eslint ./ --fix --color",
     "start": "node app.js",
     "start:dev": "nodemon",
-    "v": "version"
+    "v": "version --patch"
   },
   "dependencies": {
     "argon2": "^0.28.5",
