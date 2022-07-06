@@ -37,7 +37,7 @@
   "lint-saged": {
     "*.js": [
       "yarn lint:fix",
-      "yarn v"
+      "git add"
     ]
   }
 }
