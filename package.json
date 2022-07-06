@@ -1,6 +1,6 @@
 {
   "name": "babl",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "main": "app.js",
   "type": "module",
   "packageManager": "yarn@3.2.1",
@@ -8,8 +8,7 @@
     "lint": "eslint ./ --color",
     "lint:fix": "eslint ./ --fix --color",
     "start": "node app.js",
-    "start:dev": "nodemon",
-    "v": "version --patch"
+    "start:dev": "nodemon"
   },
   "dependencies": {
     "argon2": "^0.28.5",
@@ -38,8 +37,7 @@
   "lint-saged": {
     "*.js": [
       "yarn lint:fix",
-      "yarn v",
-      "git add"
+      "yarn v"
     ]
   }
 }
