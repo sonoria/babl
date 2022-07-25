@@ -8,9 +8,17 @@
   "plugins": ["react"],
   "rules": {
     "import/prefer-default-export": "off",
-    "import/extensions": [
-      "error",
-      "always"
-    ]
+    "import/extensions": ["error", "always"],
+    "linebreak-style": 0
+  },
+  "settings": {
+    "react": {
+      "version": "18.2.0"
+    },
+    "import/resolver": {
+      "node": {
+        "extensions": [".js", ".jsx", ".ts", ".tsx"]
+      }
+    }
   }
 }
