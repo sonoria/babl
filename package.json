@@ -1,5 +1,6 @@
 {
   "name": "babl",
+  "license": "ISC",
   "version": "0.1.1",
   "main": "app.js",
   "type": "module",
@@ -7,8 +8,10 @@
   "scripts": {
     "lint": "eslint ./ --color",
     "lint:fix": "eslint ./ --fix --color",
-    "start": "node app.js",
-    "start:dev": "nodemon"
+    "server": "node app.js",
+    "server:dev": "nodemon",
+    "client": "yarn --cwd client start",
+    "dev": "concurrently \"yarn server:dev\" \"yarn client\""
   },
   "dependencies": {
     "argon2": "^0.28.5",
@@ -19,6 +22,7 @@
     "mongoose": "^6.4.1"
   },
   "devDependencies": {
+    "concurrently": "^7.2.2",
     "eslint": "^7.32.0 || ^8.2.0",
     "eslint-config-airbnb": "^19.0.4",
     "eslint-config-prettier": "^8.5.0",
